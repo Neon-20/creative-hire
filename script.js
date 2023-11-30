@@ -4,11 +4,27 @@ const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
-yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Yay, see you very soon!";
-  gif.src =
-    "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
-});
+// yesBtn.addEventListener("click", () => {
+//   setTimeout(()=>{
+//   question.innerHTML = "Yay, see you very soon!";
+//   gif.src =
+//     "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+//   },1000);
+//   setTimeout(()=>{
+//     window.location.href = 'https://dev.pranavrajveer.com'; 
+//     },3000);
+// });
+
+yesBtn.addEventListener('click',() =>{
+  setTimeout(()=>{
+    question.innerHTML = "Yay, please see my profile :)"
+    gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif"
+  },1000)
+  setTimeout(()=>{
+    window.location.href = "https://dev.pranavrajveer.com"
+  },2000)
+})
+
 
 noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
