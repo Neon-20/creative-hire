@@ -38,7 +38,7 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.top = randomY + "px";
 
   hoverCounter++;
-  if (hoverCounter >= 10) {
+  if (hoverCounter >= 7) {
     alert("Why do You dislike me, Please select Yes 🥺");
     hoverCounter = 0;
   }
