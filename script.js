@@ -25,7 +25,7 @@ yesBtn.addEventListener('click',() =>{
   },2000)
 })
 
-
+let hoverCounter = 0;
 noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
@@ -36,4 +36,10 @@ noBtn.addEventListener("mouseover", () => {
 
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
+
+  hoverCounter++;
+  if (hoverCounter >= 10) {
+    alert("Why do You dislike me, Please select Yes 🥺");
+    hoverCounter = 0;
+  }
 });
